@@ -119,18 +119,18 @@ const DealerDetails = ({ dealers }) => {
                         <div className="space-y-4">
                             {dealer.aiDealer && (
                                 <div className="p-3 bg-white rounded-lg border border-gray-200 shadow-sm flex flex-wrap gap-4 items-center justify-center">
-                                    <img src="/HKT.png" alt="HKT" className="h-10 object-contain" />
+                                    <img src="./HKT.png" alt="HKT" className="h-10 object-contain" />
                                     <div className="h-8 w-px bg-gray-200"></div>
-                                    <img src="/GEM_PWER.png" alt="GEM POWER" className="h-10 object-contain" />
+                                    <img src="./GEM_PWER.png" alt="GEM POWER" className="h-10 object-contain" />
                                     <div className="h-8 w-px bg-gray-200"></div>
-                                    <img src="/GEM_HARNESS.png" alt="GEM HARNESS" className="h-10 object-contain" />
+                                    <img src="./GEM_HARNESS.png" alt="GEM HARNESS" className="h-10 object-contain" />
                                 </div>
                             )}
 
                             {dealer.apiDealer && (
                                 <div className="p-3 bg-white rounded-lg border border-gray-200 shadow-sm flex justify-center">
                                     <img
-                                        src="/GALERIA_LOGO.jpeg"
+                                        src="./GALERIA_LOGO.jpeg"
                                         alt="Galeria API Dealer"
                                         className="max-h-16 object-contain"
                                     />
