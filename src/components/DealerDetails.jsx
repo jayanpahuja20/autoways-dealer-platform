@@ -1,9 +1,5 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { gemHarnessLogo } from "../../public/GEM_HARNESS.png"
-import { gemPowerLogo } from "../../public/GEM_PWER.png"
-import { hktLogo } from "../../public/HKT.png"
-import { galeriaLogo } from "../../public/GALERIA_LOGO.jpeg"
 
 const DealerDetails = ({ dealers }) => {
     const { id } = useParams();
@@ -123,18 +119,18 @@ const DealerDetails = ({ dealers }) => {
                         <div className="space-y-4">
                             {dealer.aiDealer && (
                                 <div className="p-3 bg-white rounded-lg border border-gray-200 shadow-sm flex flex-wrap gap-4 items-center justify-center">
-                                    <img src={hktLogo} alt="HKT" className="h-10 object-contain" />
+                                    <img src={`${import.meta.env.BASE_URL}HKT.png`} alt="HKT" className="h-10 object-contain" />
                                     <div className="h-8 w-px bg-gray-200"></div>
-                                    <img src={gemPowerLogo} alt="GEM POWER" className="h-10 object-contain" />
+                                    <img src={`${import.meta.env.BASE_URL}GEM_PWER.png`} alt="GEM POWER" className="h-10 object-contain" />
                                     <div className="h-8 w-px bg-gray-200"></div>
-                                    <img src={gemHarnessLogo} alt="GEM HARNESS" className="h-10 object-contain" />
+                                    <img src={`${import.meta.env.BASE_URL}GEM_HARNESS.png`} alt="GEM HARNESS" className="h-10 object-contain" />
                                 </div>
                             )}
 
                             {dealer.apiDealer && (
                                 <div className="p-3 bg-white rounded-lg border border-gray-200 shadow-sm flex justify-center">
                                     <img
-                                        src={galeriaLogo}
+                                        src={`${import.meta.env.BASE_URL}GALERIA_LOGO.jpeg`}
                                         alt="Galeria API Dealer"
                                         className="max-h-16 object-contain"
                                     />
