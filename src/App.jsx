@@ -62,7 +62,7 @@ function App() {
     }, []);
 
     return (
-        <Router>
+        <Router basename='/autoways-dealer-platform/'>
             <div className="min-h-screen bg-gray-50 flex flex-col">
                 <header className="bg-white shadow-sm z-10 sticky top-0">
                     <div className="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
