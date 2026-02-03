@@ -67,7 +67,7 @@ const DealerTable = ({ dealers, filterType, setFilterType }) => {
                     </div>
                     <input
                         type="text"
-                        className="block w-full pl-10 pr-4 py-2 text-gray-900 border border-gray-200 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 focus:bg-white transition-all"
+                        className="block w-full pl-10 pr-4 py-2 text-gray-900 border border-gray-200 rounded-lg bg-gray-50 focus:ring-red-500 focus:border-red-500 focus:bg-white transition-all"
                         placeholder="Search dealers..."
                         value={filterText}
                         onChange={(e) => setFilterText(e.target.value)}
@@ -86,7 +86,7 @@ const DealerTable = ({ dealers, filterType, setFilterType }) => {
                         </button>
                         <button
                             onClick={() => setFilterType('ai')}
-                            className={`px-3 py-1.5 text-sm font-medium rounded-md transition-all ${filterType === 'ai' ? 'bg-blue-600 text-white shadow-sm' : 'text-gray-500 hover:text-gray-700'
+                            className={`px-3 py-1.5 text-sm font-medium rounded-md transition-all ${filterType === 'ai' ? 'bg-red-600 text-white shadow-sm' : 'text-gray-500 hover:text-gray-700'
                                 }`}
                         >
                             AI Only
@@ -105,7 +105,7 @@ const DealerTable = ({ dealers, filterType, setFilterType }) => {
                     <label htmlFor="sort-select" className="text-sm font-medium text-gray-700 whitespace-nowrap hidden sm:block">Sort by:</label>
                     <select
                         id="sort-select"
-                        className="block w-full md:w-auto pl-3 pr-8 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-lg"
+                        className="block w-full md:w-auto pl-3 pr-8 py-2 text-base border-gray-300 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm rounded-lg"
                         onChange={handleSortChange}
                         value={`${sortConfig.key}-${sortConfig.direction}`}
                     >
@@ -137,7 +137,7 @@ const DealerTable = ({ dealers, filterType, setFilterType }) => {
                                 <div className="p-5 flex-grow">
                                     <div className="flex justify-between items-start mb-4">
                                         <div>
-                                            <h3 className="text-lg font-bold text-gray-900 line-clamp-1 group-hover:text-blue-600 transition-colors cursor-pointer"
+                                            <h3 className="text-lg font-bold text-gray-900 line-clamp-1 group-hover:text-red-600 transition-colors cursor-pointer"
                                                 onClick={() => goToDetails(dealer.id)}
                                                 title={dealer.name}>
                                                 {dealer.name}
@@ -156,7 +156,7 @@ const DealerTable = ({ dealers, filterType, setFilterType }) => {
                                             </div>
                                         </div>
                                         <div className="flex flex-col items-end gap-1">
-                                            <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700 border border-blue-100 whitespace-nowrap ml-2">
+                                            <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-50 text-red-700 border border-red-100 whitespace-nowrap ml-2">
                                                 {dealer.state}
                                             </span>
                                         </div>
@@ -183,7 +183,7 @@ const DealerTable = ({ dealers, filterType, setFilterType }) => {
                                 <div className="bg-gray-50 px-5 py-3 border-t border-gray-100">
                                     <button
                                         onClick={() => goToDetails(dealer.id)}
-                                        className="text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors w-full text-center"
+                                        className="text-sm font-medium text-red-600 hover:text-red-800 transition-colors w-full text-center"
                                     >
                                         View Details &rarr;
                                     </button>

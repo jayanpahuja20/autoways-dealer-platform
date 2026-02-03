@@ -67,7 +67,7 @@ function App() {
                 <header className="bg-white shadow-sm z-10 sticky top-0">
                     <div className="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
                         <h1 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
-                            <span className="text-blue-600">Autoways</span> Dealer Locator
+                            <span className="text-red-600">Autoways</span> Dealer Locator
                         </h1>
                     </div>
                 </header>
@@ -75,7 +75,7 @@ function App() {
                 <main className="flex-grow max-w-7xl w-full mx-auto px-4 py-6 sm:px-6 lg:px-8">
                     {loading ? (
                         <div className="flex items-center justify-center py-20">
-                            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+                            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-red-600"></div>
                         </div>
                     ) : (
                         <Routes>
