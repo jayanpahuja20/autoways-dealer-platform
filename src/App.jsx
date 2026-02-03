@@ -20,7 +20,7 @@ function App() {
     useEffect(() => {
         const fetchDealers = async () => {
             try {
-                const response = await fetch(`${import.meta.env.BASE_URL}dealers.csv`);
+                const response = await fetch(`./dealers.csv`);
                 const reader = response.body.getReader();
                 const result = await reader.read();
                 const decoder = new TextDecoder('utf-8');
